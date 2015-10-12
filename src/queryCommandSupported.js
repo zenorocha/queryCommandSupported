@@ -4,11 +4,11 @@ var _queryCommandSupported = document.queryCommandSupported;
 
 document.queryCommandSupported = function(cmd) {
     if (cmd === 'copy' || cmd === 'cut') {
-        if (bowser.chrome && bowser.version >= 42) {
+        if (bowser.chrome && bowser.version >= 43) {
             return true;
         }
 
-        if (bowser.opera && bowser.version >= 29) {
+        if (bowser.opera && bowser.version >= 30) {
             return true;
         }
 
